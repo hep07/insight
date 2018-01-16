@@ -1,0 +1,9 @@
+.DS_Store
+.ipynb_checkpoints/
+
+*.pyc
+*.bst
+
+/data
+/data2
+/tf-data
