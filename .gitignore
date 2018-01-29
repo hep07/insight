@@ -9,3 +9,7 @@
 /tf-data
 /data_mini
 /notebook
+
+
+/forecaster/dist/
+/forecaster/*.egg-info
