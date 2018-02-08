@@ -21,9 +21,16 @@ class DataReader(object):
         self.test_df = DataFrame(columns=data_cols, data=data)
         self.train_df, self.val_df = self.test_df.train_test_split(train_size=0.95)
 
-        print('train size', len(self.train_df))
-        print('val size', len(self.val_df))
-        print('test size', len(self.test_df))
+    
+    def describe(self, logger):
+        logger.info('')
+        logger.info('Data dimensions:')
+        logger.info('train size', len(self.train_df))
+        logger.info('val size', len(self.val_df))
+        logger.info('test size', len(self.test_df))
+        # logger.info('    [[data]] {}'.format(self.data.shape))
+        #logger.info('Split seed = {}'.format(self.seed))
+        logger.info('')
 
     def train_batch_generator(self, batch_size):
         return self.batch_generator(

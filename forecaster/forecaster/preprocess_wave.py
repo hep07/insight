@@ -6,6 +6,18 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
+root_paths = [
+    "/Users/jiayou/Dropbox/JuanCode/Kaggle/Wikipedia/data2/", # Mac
+    "/Users/jiayou/Dropbox/Documents/JuanCode/Kaggle/Wikipedia/data2/", # 1080
+    '/Users/junxie/Dropbox/JuanCode/Insight/project/data_mini/', # pro
+    '/mnt/WD Black/Dropbox/JuanCode/Insight/Project/data_mini/', # paperspace
+]
+root = None
+for p in root_paths:
+    if os.path.exists(p):
+        root = p
+        break
+print('current working directory', root)
 
 def parse_page(x):
     x = x.split('_')
@@ -22,9 +34,8 @@ def nan_fill_forward(x):
                 fill_val = x[i, j]
     return x
 
-root = 'tf-data/'
 
-df = pd.read_csv('data_mini/train_mini.csv', encoding='utf-8')
+df = pd.read_pickle(os.path.join(root, 'train_mini.csv'))
 date_cols = [i for i in df.columns if i != 'Page']
 
 df['name'], df['project'], df['access'], df['agent'] = zip(*df['Page'].apply(parse_page))

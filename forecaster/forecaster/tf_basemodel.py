@@ -2,7 +2,7 @@ from collections import deque
 from datetime import datetime
 import logging
 from importlib import reload
-import os, imp
+import sys, os, gc, types, imp
 import pprint as pp
 
 import numpy as np
@@ -67,7 +67,7 @@ class TFBaseModel(object):
         loss_averaging_window=100,
         num_validation_batches=1,
         work_dir='tf-data',
-        # name='nn'
+        name='wave'
     ):
 
         self.reader = reader

@@ -14,7 +14,7 @@ for p in root_paths:
     if os.path.exists(p):
         root = p
         break
-print(root)
+print('current working directory', root)
 
 def parse_page(x):
     x = x.split('_')
