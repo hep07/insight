@@ -17,7 +17,7 @@ The data I explored with are web traffic data of Wikipedia, which is an accessib
 The evaluation metric is symmetric mean absolute percentage error (SMAPE).
 
 ## The approach
-Several models are implemented and benchmarked on this dataset, includes a gradient boosting decision tree, and deep learning models inspired by [LSTM RNN (recurrent neural network)](http://colah.github.io/posts/2015-08-Understanding-LSTMs/), [Wavenet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/), and [AttentionNet](https://research.googleblog.com/2017/08/transformer-novel-neural-network.html).
+Several models are implemented and benchmarked on this dataset, includes a gradient boosting decision tree, and deep learning models inspired by [LSTM RNN (recurrent neural network)](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) and [Wavenet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/).
 
 ## Requirements
 11 GB GPU (recommended), Python 3
