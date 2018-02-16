@@ -1,5 +1,5 @@
 # Forecasting Future Values of Multiple Time Series
-my Insight AI project
+Insight AI project of Jun Xie
 
 ## The motivation
 Data in the form of time-dependent sequential observations emerge in many key real-world problems, including areas such as biological data, financial markets, demand and supply forecasting, signal collected in IoT and wearable devices, to audio and video processing. The tranditional methods (such as ARIMA) that are based on statistical features (Exponential Moving Average) can do pretty well in single time series prediction, but for multiple time series task, it can not generate predictions based on related time series that have similar pattern. Future values may depends on the previous value, it may also depends on other external time series that has similarity. 
