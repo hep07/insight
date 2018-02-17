@@ -1,1 +1,1 @@
-from .text import joke
+from .forecaster import Forecaster

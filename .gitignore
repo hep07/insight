@@ -9,6 +9,6 @@
 /tf-data
 /data_mini
 
-
+/examples/tf-data
 /forecaster/dist/
-/forecaster/*.egg-info
+*.egg-info
