@@ -1,6 +1,8 @@
-# Forecaster: Deep Learning Based Time Series Forecasting
+# Forecaster
 
-Insight AI project of Jun Xie
+**Deep Learning Based Time Series Forecasting**
+
+Jun Xie's Project in the Insight Artificial Intelligence Program
 
 ## What is it?
 
