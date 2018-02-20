@@ -5,6 +5,17 @@
 Jun Xie's Project in the Insight Artificial Intelligence Program
 
 ## What is it?
+Forecaster, is a deep learning based time series forecasting python package. The input is a set of time series, and if there are external features, time and series related features, it can also be fed into the model. The output is the predicted values for all time series over a future time span that user defined. Here shows an [example](https://github.com/kylinorange/insight/blob/master/examples/Example.ipynb) of how to use the package.
+~~~
+import forecaster as fct
+f = fct.Forecaster(
+    data=data,
+    forecast_length=10,
+)
+f.fit()
+prediction = f.predict()
+~~~
+
 
 ## Example
 The objective of this project is to predict multiple sequences of future values, given the sequences of historical time series data.

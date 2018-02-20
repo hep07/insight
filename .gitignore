@@ -8,6 +8,7 @@
 /data2
 /tf-data
 /data_mini
+/dist
 
 /examples/tf-data
 /forecaster/dist/
